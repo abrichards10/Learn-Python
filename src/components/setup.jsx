@@ -1,7 +1,8 @@
 import React from "react";
 import Sidebar from "./sidebar";
-const Setup = () => {
+import {Link, useNavigate} from "react-router-dom";
 
+const Setup = () => {
     return (
         <div id="outer-container">
             <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
@@ -11,6 +12,10 @@ const Setup = () => {
                     <p>
                         Setup Instructions
                     </p>
+                    <div className="nav-buttons">
+                        <Link to="/" className="back-button"></Link>
+                        <Link to="/comments" className="next-button"></Link>
+                    </div>
                 </div>
             </div>
         </div>

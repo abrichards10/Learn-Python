@@ -8,6 +8,7 @@ body {
   padding-left: 100px;
   padding-top: 75px;
   line-height: 50px;
+
 }
 
 .main-setup {
@@ -16,7 +17,13 @@ body {
   line-height: 50px;
 }
 
+.nav-buttons {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 .next-button {
+  flex: 2;
   margin-left: 85%;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
@@ -25,10 +32,23 @@ body {
   background-color: white;
   cursor: pointer;
   outline: none;
-  font-size: 20px;
+  font-size: 0;
   border-left: 20px solid;
   border-right: none;
   border-left-color: #C6AFE3;
+}
+
+
+.back-button {
+  margin-right: 20px;
+  border-right-color: #C6AFE3;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 20px solid;
+  background: white;
+  border-left: none;
+  cursor: pointer;
+  outline: none;
 }
 
 
