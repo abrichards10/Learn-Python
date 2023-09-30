@@ -3,36 +3,65 @@ body {
   font-family: "Comic Sans MS", serif;
 }
 
+.main-home {
+  padding-right: 30px;
+  padding-left: 100px;
+  padding-top: 75px;
+  line-height: 50px;
+}
+
+.main-setup {
+  padding-left: 100px;
+  padding-top: 75px;
+  line-height: 50px;
+}
+
+.next-button {
+  margin-left: 85%;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 20px solid;
+  border-left: none;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+  font-size: 20px;
+  border-left: 20px solid;
+  border-right: none;
+  border-left-color: #C6AFE3;
+}
+
+
 /*SIDEBAR*/
 
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
-  width: 36px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   left: 36px;
   top: 36px;
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #373a47;
+  background: #000000;
 }
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-  background: #a90000;
+  background: #C6AFE3;
 }
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-  height: 24px;
-  width: 24px;
+  height: 30px;
+  width: 30px;
 }
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #bdc3c7;
+  background: #000000;
 }
 
 /*
@@ -46,8 +75,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-  background: #373a47;
-  padding: 2.5em 1.5em 0;
+  background: #C6AFE3;
+  padding: 1em 1.5em;
   font-size: 1.15em;
 }
 
@@ -58,7 +87,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Wrapper for item list */
 .bm-item-list {
-  color: #b8b7ad;
+  color: #000000;
   padding: 0.8em;
 }
 
@@ -78,8 +107,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* Individual item */
 .bm-item {
   display: inline-block;
-
-  color: #d1d1d1;
+  color: #000000;
   margin-bottom: 10px;
   text-align: left;
   text-decoration: none;
@@ -87,5 +115,5 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 .bm-item:hover {
-  color: #ffffff;
+  color: #000000;
 }
