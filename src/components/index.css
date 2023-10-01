@@ -1,17 +1,10 @@
 body {
   margin: 0;
-  font-family: "Comic Sans MS", serif;
+  font-family: "Andale Mono";
 }
 
 .main-home {
   padding-right: 30px;
-  padding-left: 100px;
-  padding-top: 75px;
-  line-height: 50px;
-
-}
-
-.main-setup {
   padding-left: 100px;
   padding-top: 75px;
   line-height: 50px;
@@ -25,6 +18,7 @@ body {
 .next-button {
   flex: 2;
   margin-left: 85%;
+  margin-top: 50px;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   border-right: 20px solid;
@@ -40,21 +34,30 @@ body {
 
 
 .back-button {
-  margin-right: 20px;
-  border-right-color: #C6AFE3;
+  margin-top: 50px;
+  border-left-color: #C6AFE3;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   border-right: 20px solid;
   background: white;
-  border-left: none;
   cursor: pointer;
   outline: none;
 }
 
+.code-background {
+  text-indent: 10px;
+  background-color: #e3d6f5;
+  border-radius: 10px;
+}
 
 /*SIDEBAR*/
 
 /* Position and sizing of burger button */
+
+.hello-world {
+  font-size: 25px;
+}
+
 .bm-burger-button {
   position: fixed;
   width: 20px;

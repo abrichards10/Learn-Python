@@ -1,13 +1,13 @@
 import React from "react";
 import Sidebar from "./sidebar";
-import {Link, useNavigate} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 const Setup = () => {
     return (
         <div id="outer-container">
             <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
             <div id="page-wrap">
-                <div className="main-setup">
+                <div className="main-home">
                     <h1>Setup</h1>
                     <p>
                         Setup Instructions
