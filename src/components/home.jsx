@@ -2,9 +2,9 @@ import React from "react";
 import Sidebar from "./sidebar";
 import "./index.css"
 import {Link} from "react-router-dom";
-const Home = () => {
-
-    return (
+class Home extends React.Component {
+    render() {
+        return (
         <div id="outer-container">
             <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
             <div id="page-wrap">
@@ -23,7 +23,8 @@ const Home = () => {
                 </div>
             </div>
         </div>
-    );
+        );
+    }
 }
 
 export default Home;

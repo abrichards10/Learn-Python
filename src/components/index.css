@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Andale Mono";
+  font-family: "Comic Sans MS";
 }
 
 .main-home {
@@ -35,19 +35,36 @@ body {
 
 
 .back-button {
-  border-left-color: #C6AFE3;
+  border-right-color: #C6AFE3;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   border-right: 20px solid;
-  background: white;
+  background-color: white;
   cursor: pointer;
   outline: none;
 }
 
 .code-background {
+  font-family: "Andale Mono", serif;
   text-indent: 10px;
   background-color: #e3d6f5;
   border-radius: 10px;
+}
+
+.output {
+  font-family: "Andale Mono", serif;
+  text-indent: 15px;
+  margin: 10px;
+  background-color: #e3e3e3;
+  border-radius: 10px;
+}
+
+.run-code-button {
+  padding: 5px;
+  font-family: AppleGothic;
+  border-radius: 5px;
+  border: none;
+  background-color: #d3d3d3;
 }
 
 /*SIDEBAR*/
