@@ -1,7 +1,6 @@
 import Sidebar from "./sidebar";
 import {Link} from "react-router-dom";
 import React from "react";
-
 const Comments = () => {
     return (
         <div id="outer-container">
@@ -25,6 +24,7 @@ const Comments = () => {
                     </p>
                     <div className="nav-buttons">
                         <Link to="/setup" className="back-button"></Link>
+                        <Link to="/print" className="next-button"></Link>
                     </div>
                 </div>
             </div>

@@ -14,6 +14,15 @@ export default props => {
             <a className="menu-item" href="/comments">
                 Comments
             </a>
+            <a className="menu-item" href="/print">
+                Print
+            </a>
+            <a className="menu-item" href="/variables">
+                Variables
+            </a>
+            <a className="menu-item" href="/conditionals">
+                Conditionals
+            </a>
         </Menu>
     );
 };

@@ -5,20 +5,21 @@ body {
 
 .main-home {
   padding-right: 30px;
-  padding-left: 100px;
+  padding-left: 75px;
   padding-top: 75px;
   line-height: 50px;
 }
 
 .nav-buttons {
+  margin-bottom: 20px;
   display: flex;
   flex-wrap: nowrap;
+  margin-top: 50px;
 }
 
 .next-button {
   flex: 2;
   margin-left: 85%;
-  margin-top: 50px;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   border-right: 20px solid;
@@ -34,7 +35,6 @@ body {
 
 
 .back-button {
-  margin-top: 50px;
   border-left-color: #C6AFE3;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
