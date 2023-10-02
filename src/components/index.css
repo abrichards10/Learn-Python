@@ -60,10 +60,10 @@ body {
 }
 
 .run-code-button {
-  padding: 5px;
-  font-family: AppleGothic;
+  padding: 3px 10px;
+  font-family: "Euphemia UCAS";
   border-radius: 5px;
-  border: none;
+  border-color: #C6AFE3;;
   background-color: #d3d3d3;
 }
 
