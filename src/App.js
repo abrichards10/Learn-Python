@@ -5,12 +5,12 @@ import {
   Route,
 } from "react-router-dom";
 
-import Home from "./components/home";
-import Setup from "./components/setup";
-import Comments from "./components/comments";
-import Print from "./components/print";
-import Variables from "./components/variables"
-import Conditionals from "./components/conditionals"
+import Home from "./home";
+import Setup from "./setup";
+import Comments from "./comments";
+import Print from "./print";
+import Variables from "./variables"
+import Conditionals from "./conditionals"
 function App() {
   return (
       <>
