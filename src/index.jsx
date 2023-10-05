@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {BrowserRouter, HashRouter, Route, Routes} from "react-router-dom";
 import Home from "./home";
 import Setup from "./setup";
 import Comments from "./comments";
@@ -14,9 +14,9 @@ import Conditionals from "./conditionals";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      <BrowserRouter>
+      <HashRouter>
           <App/>
-      </BrowserRouter>
+      </HashRouter>
   </React.StrictMode>
 );
 
