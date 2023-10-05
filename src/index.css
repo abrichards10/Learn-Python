@@ -71,6 +71,10 @@ body {
 
 /* Position and sizing of burger button */
 
+.menu-item {
+  color: black;
+}
+
 .hello-world {
   font-size: 25px;
 }
