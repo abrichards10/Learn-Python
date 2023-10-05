@@ -9,6 +9,12 @@ class Print extends React.Component {
     onButtonClickHandler = () => {
         this.setState({showMessage: true});
     };
+    onButtonClickHandler1 = () => {
+        this.setState({showMessage1: true});
+    };
+    onButtonClickHandler2 = () => {
+        this.setState({showMessage2: true});
+    };
     render() {
         return (
             <div id="outer-container">
@@ -18,17 +24,22 @@ class Print extends React.Component {
                         <h1>Print</h1>
                         <div className="code-background">
                             print("This is a print statement")
-                        </div><br/><br/>
+                        </div>
+                        {this.state.showMessage && <div className="output">This is a print statement</div>}
+                        <button className="run-code-button" onClick={this.onButtonClickHandler}>Run</button><br/><br/>
                         Print multiple things
                         <div className="code-background">
                             print("One thing", "Another thing")
-                        </div><br/><br/>
+                        </div>
+                        {this.state.showMessage1 && <div className="output">One thing Another thing</div>}
+                        <button className="run-code-button" onClick={this.onButtonClickHandler1}>Run</button>
+                        <br/><br/>
                         Specify a separator
                         <div className="code-background">
                             print("One thing", "Another thing", sep="+++")
                         </div>
-                        {this.state.showMessage && <div className="output">One thing+++Another thing</div>}
-                        <button className="run-code-button" onClick={this.onButtonClickHandler}>Run</button>
+                        {this.state.showMessage2 && <div className="output">One thing+++Another thing</div>}
+                        <button className="run-code-button" onClick={this.onButtonClickHandler2}>Run</button>
 
                         {/*NAV BUTTONS*/}
                         <div className="nav-buttons">

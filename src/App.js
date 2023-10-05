@@ -1,7 +1,5 @@
 import React from "react";
-import Sidebar from "./sidebar";
-import {Link, Navigate} from "react-router-dom";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import { Route, Routes} from "react-router-dom";
 import Home from "./home";
 import Setup from "./setup";
 import Comments from "./comments";

@@ -61,10 +61,15 @@ body {
 
 .run-code-button {
   padding: 3px 10px;
-  font-family: "Euphemia UCAS";
-  border-radius: 5px;
-  border-color: #C6AFE3;;
+  font-family: "Comic Sans MS";
+  border-radius: 10px;
+  font-weight: lighter;
+  border: none;
   background-color: #d3d3d3;
+}
+
+.run-code-button:hover {
+  background-color: #e8e8e8;
 }
 
 /*SIDEBAR*/
