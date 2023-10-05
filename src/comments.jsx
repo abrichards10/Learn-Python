@@ -13,12 +13,12 @@ class Comments extends React.Component {
                             <div className="code-background">
                                 # This is a comment
                             </div>
-                            <br/><br/>
+                            <br/>
                             <div className="code-background">
                                 print(“Hi”) # So is this
                             </div>
-                            <br/><br/>
-                            <i>(Psst, put a hashtag in front)</i><br/><br/><br/>
+                            <br/>
+                            <i>(Psst, put a hashtag in front)</i><br/><br/>
                             <div className="code-background">
                                 “””<br/>&nbsp;
                                 Everything between these 3 quotes is a comment<br/>

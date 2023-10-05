@@ -14,6 +14,7 @@ export default props => {
                 <Link className="menu-item" style={{ textDecoration: 'none' }} to="/print">Print</Link>
                 <Link className="menu-item" style={{ textDecoration: 'none' }} to="/variables">Variables</Link>
                 <Link className="menu-item" style={{ textDecoration: 'none' }} to="/conditionals">Conditionals</Link>
+                <Link className="menu-item" style={{ textDecoration: 'none' }} to="/feedback">Feedback</Link>
         </Menu>
     );
 };

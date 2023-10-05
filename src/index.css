@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Comic Sans MS";
+  font-family: "DIN Alternate" ;
 }
 
 .main-home {
@@ -61,9 +61,8 @@ body {
 
 .run-code-button {
   padding: 3px 10px;
-  font-family: "Comic Sans MS";
+  font-family: "DIN Alternate" ;
   border-radius: 10px;
-  font-weight: lighter;
   border: none;
   background-color: #d3d3d3;
 }

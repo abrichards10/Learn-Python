@@ -6,6 +6,7 @@ import Comments from "./comments";
 import Print from "./print";
 import Variables from "./variables";
 import Conditionals from "./conditionals";
+import Feedback from "./feedback";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                 <Route path="/print" element={<Print />}></Route>
                 <Route path="/variables" element={<Variables />}></Route>
                 <Route path="/conditionals" element={<Conditionals />}></Route>
+                <Route path="/feedback" element={<Feedback />}></Route>
             </Routes>
         </div>
     );
