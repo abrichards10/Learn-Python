@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import Toggle from "react-toggle";
+import React, {useState} from "react";
 import { Switch } from '@headlessui/react'
 import { useMediaQuery } from "react-responsive";
 import createPersistedState from "use-persisted-state";
@@ -47,3 +46,6 @@ export function useColorScheme() {
         setIsDark,
     };
 }
+
+
+

@@ -9,23 +9,23 @@ class Setup extends React.Component {
             <div id="outer-container">
                 <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'}/>
                 <div id="page-wrap">
+                    <DarkModeToggle></DarkModeToggle>
                     <div className="main-home">
-                        <DarkModeToggle></DarkModeToggle>
                         <h1>Setup</h1>
                         <p>
                             Install Python --> <i>(Probably don't have to tbh, it's usually installed)</i>
                             <br/><a className="download-links" href="https://wiki.python.org/moin/BeginnersGuide/Download">Install</a>
 
                             <br/> <br/>Windows? Put this in the command line:
-                            &nbsp;<div className="terminal-commands">\Users\<i>Your Name></i>python --version</div>
+                            &nbsp;<div className="terminal-commands" onClick={() => navigator.clipboard.writeText("\\Users\\Your Name>python --version")}>\Users\<i>Your Name></i>python --version</div>
 
                             <br/><br/>Mac/Linux? Put this in terminal:
-                            &nbsp;<div className="terminal-commands">python --version</div>
+                            &nbsp;<div className="terminal-commands" onClick={() => navigator.clipboard.writeText("python --version")}>python --version</div>
                             <i>Command not found? Try: python3 --version</i>
 
-                            <br/><br/><i>Pro Tip: python / python3 <b>RUNS</b> the file</i>
+                            <br/><br/><i>&nbsp;&nbsp;Pro Tip: python / python3 <b>RUNS</b> the file</i>
 
-                            <br/><br/>You should have at least <i>one</i> of these:
+                            <br/><br/>You should have at least <b>one</b> of these:
                             <br/><a className="download-links" href="https://www.jetbrains.com/idea/download/?section=mac">Intellij</a>
                             <br/><a className="download-links" href="https://code.visualstudio.com/download">Visual Studio Code</a>
 
@@ -34,12 +34,14 @@ class Setup extends React.Component {
                                 <li>Create a new file in one of them</li>
                                 <li>Save it as helloworld.py</li>
                                 <li>Open it</li>
-                                <li>Type this:<div className="code-background-example">
-                                    print("Hello World")
+                                <li>Type this in the file:<div className="code-background">
+                                    print("Hello World!")
                                 </div></li>
-                                <li>Run this in your Command Line/ Terminal:
-                                    &nbsp;<div className="terminal-commands">python3 helloworld.py</div>
+                                <li>Run this in your Command Line / Terminal:
+                                    &nbsp;<div className="terminal-commands" onClick={() => navigator.clipboard.writeText("python3 helloworld.py")}>python3 helloworld.py</div>
                                 </li>
+                                <li>You should get this: <div className="output-example">Hello World!</div> </li>
+
                             </ul>
 
                         </p>

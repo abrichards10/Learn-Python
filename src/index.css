@@ -66,9 +66,16 @@ body {
   border-radius: 10px;
 }
 
+.output-example {
+  font-family: "Andale Mono", serif;
+  text-indent: 15px;
+  background-color: #e3e3e3;
+  border-radius: 10px;
+}
+
 .run-code-button {
   padding: 3px 10px;
-  font-family: "DIN Alternate" ;
+  font-family: "DIN Alternate", serif ;
   border-radius: 10px;
   border: none;
   background-color: #d3d3d3;
@@ -83,6 +90,15 @@ body {
   background-color: black;
   color: white;
   padding-left: 10px;
+  border-radius: 10px;
+}
+
+.terminal-commands:hover {
+  background-color: #4b4b4b;
+}
+
+.terminal-commands-example:hover {
+  background-color: #4b4b4b;
 }
 
 /*SIDEBAR*/
@@ -181,16 +197,17 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 .dark-mode-icon {
-  margin-right: 75px;
-  position: absolute;
+  position: fixed;
+  margin-top: 35px;
   right: 0;
+  margin-right: 75px;
   border-radius: 50px;
   border-color: transparent;
   background-color: #000000;
 }
 
 .download-links {
-  color: black;
+  color: #806a9d;
 }
 
 
@@ -237,6 +254,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
     color: black;
     background-color: #a1a1a1;
   }
+  body.dark .output-example {
+    color: black;
+    background-color: #a1a1a1;  }
 
   body.dark .run-code-button {
     background-color: #a1a1a1;
@@ -256,6 +276,12 @@ Note: Beware of modifying this element as it can break the animations - you shou
     background-color: #a8a8a8;
     color: black;
   }
+
+
+  body.dark .terminal-commands:hover {
+    background-color: #8c8c8c;
+  }
+
 
   body.dark .download-links {
     color: #806a9d;
