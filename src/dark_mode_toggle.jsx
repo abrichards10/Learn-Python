@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Toggle from "react-toggle";
+import { Switch } from '@headlessui/react'
 import { useMediaQuery } from "react-responsive";
 import createPersistedState from "use-persisted-state";
 import { useEffect, useMemo } from "react";
@@ -7,13 +8,15 @@ const useColorSchemeState = createPersistedState("colorScheme");
 
 export const DarkModeToggle = () => {
     const { isDark, setIsDark } = useColorScheme();
+    const [isIcon, setIsIcon] = useState(false);
+
     return (
-        <Toggle
+        <Switch
             checked={isDark}
-            onChange={({ target }) => setIsDark(target.checked)}
-            icons={{ checked: "🌙", unchecked: "🔆" }}
-            aria-label="Dark mode toggle"
-        />
+            onChange={setIsDark}
+            className="dark-mode-icon" onClick={() => setIsIcon(!isIcon)}>
+            {isIcon ? "🔆" : "🌙"}
+        </Switch>
     );
 };
 

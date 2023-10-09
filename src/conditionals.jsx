@@ -2,6 +2,7 @@ import React from "react";
 import Sidebar from "./sidebar";
 import "./index.css"
 import {Link} from "react-router-dom";
+import {DarkModeToggle} from "./dark_mode_toggle";
 class Conditionals extends React.Component{
     render() {
         return (
@@ -9,6 +10,7 @@ class Conditionals extends React.Component{
                 <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
                 <div id="page-wrap">
                     <div className="main-home">
+                        <DarkModeToggle></DarkModeToggle>
                         <h1>Conditionals</h1>
                         <div className="nav-buttons">
                             <Link to="/variables" className="back-button"></Link>
