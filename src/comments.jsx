@@ -1,6 +1,7 @@
 import Sidebar from "./sidebar";
 import {Link} from "react-router-dom";
 import React from "react";
+import {DarkModeToggle} from "./dark_mode_toggle";
 class Comments extends React.Component {
     render() {
         return (
@@ -8,6 +9,7 @@ class Comments extends React.Component {
                 <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'}/>
                 <div id="page-wrap">
                     <div className="main-home">
+                        <DarkModeToggle></DarkModeToggle>
                         <h1>Comments</h1>
                         <p>
                             <div className="code-background">

@@ -2,6 +2,9 @@ import React from "react";
 import Sidebar from "./sidebar";
 import "./index.css"
 import {Link} from "react-router-dom";
+import {DarkModeToggle, useColorScheme} from "./dark_mode_toggle";
+import Toggle from "react-toggle";
+
 class Home extends React.Component {
     render() {
         return (
@@ -9,6 +12,7 @@ class Home extends React.Component {
             <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
             <div id="page-wrap">
                 <div className="main-home">
+                    <DarkModeToggle></DarkModeToggle>
                     <h1>Greetings</h1>
                     <p>Hello!  I’m Brooke and I am here to teach you how to code.
                         This is an ongoing project that will continue to grow

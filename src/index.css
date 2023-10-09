@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "DIN Alternate" ;
+  font-family: "DIN Alternate", serif ;
 }
 
 .main-home {
@@ -33,9 +33,8 @@ body {
   border-left-color: #C6AFE3;
 }
 
-
 .back-button {
-  border-right-color: #C6AFE3;
+  color: #C6AFE3;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   border-right: 20px solid;
@@ -165,3 +164,28 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-item:hover {
   color: #000000;
 }
+
+
+/* LIGHT/ DARK mode */
+  body.dark {
+    background-color: #2d2d2d;
+    color: #a1a1a1;
+  }
+
+  body.dark .next-button {
+    background-color: #2d2d2d;
+  }
+
+  body.dark .back-button {
+    background-color: #2d2d2d;
+  }
+
+  body.dark .bm-menu {
+    background: #806a9d;
+  }
+
+  body.dark .code-background {
+    background-color: #806a9d;
+    color: black;
+  }
+

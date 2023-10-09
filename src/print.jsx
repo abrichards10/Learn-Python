@@ -1,6 +1,7 @@
 import Sidebar from "./sidebar";
 import {Link} from "react-router-dom";
 import React from "react";
+import {DarkModeToggle} from "./dark_mode_toggle";
 
 class Print extends React.Component {
     state = {
@@ -21,6 +22,7 @@ class Print extends React.Component {
                 <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
                 <div id="page-wrap">
                     <div className="main-home">
+                        <DarkModeToggle></DarkModeToggle>
                         <h1>Print</h1>
                         <div className="code-background">
                             print("This is a print statement")
