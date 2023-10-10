@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Learn-Python/static/css/main.2f152b65.css",
-    "main.js": "/Learn-Python/static/js/main.3c00589f.js",
+    "main.css": "/Learn-Python/static/css/main.27629aaf.css",
+    "main.js": "/Learn-Python/static/js/main.9dae726a.js",
     "static/js/787.801cb5f4.chunk.js": "/Learn-Python/static/js/787.801cb5f4.chunk.js",
     "index.html": "/Learn-Python/index.html",
-    "main.2f152b65.css.map": "/Learn-Python/static/css/main.2f152b65.css.map",
-    "main.3c00589f.js.map": "/Learn-Python/static/js/main.3c00589f.js.map",
+    "main.27629aaf.css.map": "/Learn-Python/static/css/main.27629aaf.css.map",
+    "main.9dae726a.js.map": "/Learn-Python/static/js/main.9dae726a.js.map",
     "787.801cb5f4.chunk.js.map": "/Learn-Python/static/js/787.801cb5f4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f152b65.css",
-    "static/js/main.3c00589f.js"
+    "static/css/main.27629aaf.css",
+    "static/js/main.9dae726a.js"
   ]
 }
