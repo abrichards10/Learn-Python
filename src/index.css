@@ -19,7 +19,7 @@ body {
 
 .next-button {
   flex: 2;
-  margin-left: 85%;
+  margin-left: 90%;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   border-right: 20px solid;
@@ -75,6 +75,7 @@ body {
 
 .run-code-button {
   padding: 3px 10px;
+  cursor: pointer;
   font-family: "DIN Alternate", serif ;
   border-radius: 10px;
   border: none;
@@ -86,6 +87,7 @@ body {
 }
 
 .terminal-commands {
+  cursor: pointer;
   line-height: 30px;
   background-color: black;
   color: white;
@@ -98,6 +100,7 @@ body {
 }
 
 .terminal-commands-example:hover {
+  cursor: pointer;
   background-color: #4b4b4b;
 }
 
@@ -197,10 +200,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 .dark-mode-icon {
-  position: fixed;
-  margin-top: 35px;
-  right: 0;
-  margin-right: 75px;
+  cursor: pointer;
+  margin-left: 90%;
   border-radius: 50px;
   border-color: transparent;
   background-color: #000000;
@@ -208,6 +209,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 .download-links {
   color: #806a9d;
+}
+
+.box-top {
+  position: fixed;
+  width: 100%;
+  height: 10%;
+  background-color: white;
 }
 
 
@@ -285,4 +293,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
   body.dark .download-links {
     color: #806a9d;
+  }
+
+  body.dark .box-top {
+    background-color: #181818;
   }

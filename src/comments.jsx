@@ -8,8 +8,10 @@ class Comments extends React.Component {
             <div id="outer-container">
                 <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'}/>
                 <div id="page-wrap">
-                    <div className="main-home">
+                    <div className="box-top">
                         <DarkModeToggle></DarkModeToggle>
+                    </div>
+                    <div className="main-home">
                         <h1>Comments</h1>
                         <p>
                             <div className="code-background">

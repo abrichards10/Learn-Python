@@ -18,11 +18,14 @@ class Print extends React.Component {
     };
     render() {
         return (
+
             <div id="outer-container">
                 <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
                 <div id="page-wrap">
-                    <div className="main-home">
+                    <div className="box-top">
                         <DarkModeToggle></DarkModeToggle>
+                    </div>
+                    <div className="main-home">
                         <h1>Print</h1>
                         <div className="code-background">
                             print("This is a print statement")

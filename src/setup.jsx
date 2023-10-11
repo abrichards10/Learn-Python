@@ -9,7 +9,9 @@ class Setup extends React.Component {
             <div id="outer-container">
                 <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'}/>
                 <div id="page-wrap">
-                    <DarkModeToggle></DarkModeToggle>
+                    <div className="box-top">
+                        <DarkModeToggle></DarkModeToggle>
+                    </div>
                     <div className="main-home">
                         <h1>Setup</h1>
                         <p>
@@ -21,7 +23,7 @@ class Setup extends React.Component {
 
                             <br/><br/>Mac/Linux? Put this in terminal:
                             &nbsp;<div className="terminal-commands" onClick={() => navigator.clipboard.writeText("python --version")}>python --version</div>
-                            <i>Command not found? Try: python3 --version</i>
+                            <i>Command not found? Try: py --version</i> OR <i>python3 --version</i>
 
                             <br/><br/><i>&nbsp;&nbsp;Pro Tip: python / python3 <b>RUNS</b> the file</i>
 
@@ -43,7 +45,7 @@ class Setup extends React.Component {
                                 <li>You should get this: <div className="output-example">Hello World!</div> </li>
 
                             </ul>
-
+                            Now you can start coding!
                         </p>
                         <div className="nav-buttons">
                             <Link to="/" className="back-button"></Link>

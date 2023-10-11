@@ -9,8 +9,10 @@ class Home extends React.Component {
         <div id="outer-container">
             <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
             <div id="page-wrap">
-                <div className="main-home">
+                <div className="box-top">
                     <DarkModeToggle></DarkModeToggle>
+                </div>
+                <div className="main-home">
                     <h1>Greetings</h1>
                     <p>Hello!  I’m Brooke and I am here to teach you how to code.
                         This is an ongoing project that will continue to grow

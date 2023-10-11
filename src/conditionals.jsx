@@ -9,8 +9,10 @@ class Conditionals extends React.Component{
             <div id="outer-container">
                 <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
                 <div id="page-wrap">
-                    <div className="main-home">
+                    <div className="box-top">
                         <DarkModeToggle></DarkModeToggle>
+                    </div>
+                    <div className="main-home">
                         <h1>Conditionals</h1>
                         <div className="nav-buttons">
                             <Link to="/variables" className="back-button"></Link>
