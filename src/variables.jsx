@@ -57,11 +57,13 @@ class Variables extends React.Component{
                         <button className="run-code-button" onClick={this.onButtonClickHandler1}>Run</button><br/><br/>
                         There are different <i>types</i> of data in Python:
                         <ul>
-                            <li>int</li>
-                            <li>string</li>
-                            <li>float</li>
+                            <li>int --> an integer (ex: 3) </li>
+                            <li>string --> anything between quotes (ex: "amongus") </li>
+                            <li>float --> decimals or integers (ex: 4.0 or 4.5) </li>
                             <li>Probably some more</li>
-                        </ul><br/>
+                        </ul>
+
+                        <i>Note: for strings you can surround them with single '' or double quotes ""</i><br/><br/>
 
                         <b>type()</b> tells the user the data type
 

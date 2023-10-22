@@ -2,6 +2,7 @@ import React from "react";
 import Sidebar from "./sidebar";
 import {Link} from "react-router-dom";
 import {DarkModeToggle} from "./dark_mode_toggle";
+import SearchBar from "./searchBar";
 
 class Setup extends React.Component {
     render() {

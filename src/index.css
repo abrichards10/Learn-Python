@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "DIN Alternate", serif ;
+  font-family: ".AppleSystemUIFont", serif ;
 }
 
 .main-home {
@@ -218,6 +218,15 @@ Note: Beware of modifying this element as it can break the animations - you shou
   background-color: white;
 }
 
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
 
 /* LIGHT/ DARK mode */
   body.dark {
