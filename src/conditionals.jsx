@@ -18,6 +18,11 @@ class Conditionals extends React.Component{
     onButtonClickHandler2 = () => {
         this.setState({showMessage2: true});
     };
+
+    onButtonClickHandler3 = () => {
+        this.setState({showMessage3: true});
+    };
+
     render() {
         return (
             <div id="outer-container">
@@ -49,6 +54,18 @@ class Conditionals extends React.Component{
 
                         if that's <b><i>False</i></b> too then we end up defaulting to going forward<br/><br/>
 
+
+                        Conditionals can be evaluated through logical comparisons:<br/>
+                        <i>(Sorry, no easier way to say that :p ) </i>
+                        <ul>
+                            <li>x == y  -->  equals<br/></li>
+                            <li> x != y  -->  does not equal<br/></li>
+                            <li>x &gt; y  --> greater than<br/></li>
+                            <li>x &lt; y --> less than<br/></li>
+                            <li>x &gt;= y  --> greater than or equal to</li>
+                            <li>x &lt;= y  --> less than or equal to</li>
+                        </ul><br/>
+
                         In code, we could set some variable to the direction the hero goes so it would look like this:<br/><br/>
 
 
@@ -72,10 +89,11 @@ class Conditionals extends React.Component{
                         <ul>
                             <li>The conditional is evaluated in the parenthesis ()</li>
                             <li>Each conditional ends with a colon " : "</li>
+                            <li>Everything under the conditional that is <b>indented</b> is part of that conditional</li>
                             <li>It compares values --> <i>(in this case two values: direction with "right" or "left")</i></li>
                             <li>It uses the double equals sign "==" to compare values</li>
                             <li>If the condition is <b>True</b> then everything inside the conditional is run</li>
-                            <li>If none of the if or elif conditionals evaluate to true, we default to running what's in 'else'</li>
+                            <li>If none of the 'if' or 'elif' conditionals evaluate to true, we default to running what's in 'else'</li>
                         </ul><br/>
 
                         <h3>Note:</h3>
@@ -104,6 +122,32 @@ class Conditionals extends React.Component{
                         {this.state.showMessage2 && <div className="output">2 is bigger</div>}
                         <button className="run-code-button" onClick={this.onButtonClickHandler2}>Run</button>
                         <br/><br/>
+
+                        <i>Psst - you don't always have to use elif ;) </i><br/><br/>
+
+                        <h3>"And" | "Or" | "Not" </h3><br/>
+
+                        You can also combine conditionals<br/><br/>
+
+                        <ul>
+                            <li>and --> all conditionals need to be met</li>
+                            <li>or --> at least one condition needs to be bet</li>
+                            <li>not --> referring to when a conditional is <b>not</b> true</li>
+                        </ul><br/><br/>
+
+                        <div className="code-background">
+                            if ( (2 > 1) and ( 4 > 3 ) ):<br/>
+                            &nbsp;&nbsp;&nbsp;print("both are true")<br/>
+                            &nbsp;if ( (3 > 1) or (4 &lt; 2) or (5 > 10)):<br/>
+                            &nbsp;&nbsp;&nbsp;print("at least one is true")<br/>
+                            &nbsp;if ( not 1 > 2):<br/>
+                            &nbsp;&nbsp;&nbsp;print("1 is not greater than 2")
+                        </div>
+                        {this.state.showMessage3 && <div className="output">both are true <br/>&emsp;at least one is true<br/>&emsp;1 is not greater than 2</div>}
+                        <button className="run-code-button" onClick={this.onButtonClickHandler3}>Run</button>
+                        <br/><br/>
+
+
 
 
 
