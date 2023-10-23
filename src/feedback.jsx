@@ -1,6 +1,6 @@
 import React from 'react';
 import Sidebar from "./sidebar";
-import {DarkModeToggle} from "./dark_mode_toggle";
+import {DarkModeToggle} from "./darkModeToggle";
 class Feedback extends React.Component {
     render() {
         return (

@@ -2,7 +2,7 @@ import React from "react";
 import Sidebar from "./sidebar";
 import "./index.css"
 import {Link} from "react-router-dom";
-import {DarkModeToggle} from "./dark_mode_toggle";
+import {DarkModeToggle} from "./darkModeToggle";
 class Conditionals extends React.Component{
     state = {
         showMessage: false
@@ -21,6 +21,10 @@ class Conditionals extends React.Component{
 
     onButtonClickHandler3 = () => {
         this.setState({showMessage3: true});
+    };
+
+    onButtonClickHandler4 = () => {
+        this.setState({showMessage4: true});
     };
 
     render() {
@@ -93,7 +97,7 @@ class Conditionals extends React.Component{
                             <li>It compares values --> <i>(in this case two values: direction with "right" or "left")</i></li>
                             <li>It uses the double equals sign "==" to compare values</li>
                             <li>If the condition is <b>True</b> then everything inside the conditional is run</li>
-                            <li>If none of the 'if' or 'elif' conditionals evaluate to true, we default to running what's in 'else'</li>
+                            <li>If none of the 'if' or 'elif' conditionals evaluate to true, we default to running what is in 'else'</li>
                         </ul><br/>
 
                         <h3>Note:</h3>
@@ -125,15 +129,41 @@ class Conditionals extends React.Component{
 
                         <i>Psst - you don't always have to use elif ;) </i><br/><br/>
 
+                        You can also <b>nest</b> if statements 👀<br/><br/>
+
+                        <i>Ex: </i> <br/>
+                        <div className="code-background">
+                            a = 4<br/>
+                            &nbsp;b = 3<br/>
+                            &nbsp;c = 2<br/>
+                            &nbsp;if ( a > b ):<br/>
+                            &nbsp;&nbsp;&nbsp;if ( b > c ):<br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("inner nested conditional")<br/>
+                        </div>
+                        {this.state.showMessage4 && <div className="output">inner nested conditional</div>}
+                        <button className="run-code-button" onClick={this.onButtonClickHandler4}>Run</button>
+                        <br/><br/>
+
+                        <i>Note: </i><br/>
+                        it's an <b>inner</b> conditional bc it's <b>indented</b><br/><br/>
+
+
+
                         <h3>"And" | "Or" | "Not" </h3><br/>
 
                         You can also combine conditionals<br/><br/>
 
                         <ul>
-                            <li>and --> all conditionals need to be met</li>
-                            <li>or --> at least one condition needs to be bet</li>
+                            <li>and --> all conditionals need to be met to be true</li>
+                            <li>or --> at least one condition needs to be bet to be true</li>
                             <li>not --> referring to when a conditional is <b>not</b> true</li>
-                        </ul><br/><br/>
+                        </ul><br/>
+
+                        <i>I do <b><i>not</i></b> see "not" used much :D</i><br/><br/><br/>
+
+                        ...<br/><br/><br/>
+
+                        I'm so sorry – have an example<br/><br/>
 
                         <div className="code-background">
                             if ( (2 > 1) and ( 4 > 3 ) ):<br/>
@@ -147,9 +177,25 @@ class Conditionals extends React.Component{
                         <button className="run-code-button" onClick={this.onButtonClickHandler3}>Run</button>
                         <br/><br/>
 
+                        <h3>One last thing!</h3>
 
+                        If you want an if statement to exist but don't know what to put in it yet... <br/>
 
+                        use <b>pass</b><br/>
 
+                        <i>(bc "if" statements don't like being empty)</i><br/><br/>
+
+                        <div className="code-background">
+                            if (a == b):<br/>
+                            &nbsp;&nbsp;&nbsp;pass<br/>
+                            &nbsp;elif (a != b):<br/>
+                            &nbsp;&nbsp;&nbsp;pass<br/>
+
+                        </div>
+
+                        <i>(no run button bc there's no output!) </i>
+
+                        <h3>Congrats! You made it through conditionals :D</h3>
 
                         <div className="nav-buttons">
                             <Link to="/variables" className="back-button"></Link>

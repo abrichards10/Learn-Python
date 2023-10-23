@@ -2,7 +2,7 @@ import React from "react";
 import Sidebar from "./sidebar";
 import "./index.css"
 import {Link} from "react-router-dom";
-import {DarkModeToggle} from "./dark_mode_toggle";
+import {DarkModeToggle} from "./darkModeToggle";
 class Variables extends React.Component{
 
     state = {
@@ -105,6 +105,7 @@ class Variables extends React.Component{
                         {this.state.showMessage5 && <div className="output">&lt;class 'float'&gt;</div>}
                         <button className="run-code-button" onClick={this.onButtonClickHandler5}>Run</button><br/><br/>
 
+                        <h3>You just learned about variables! Nice!</h3>
 
                         <div className="nav-buttons">
                             <Link to="/print" className="back-button"></Link>

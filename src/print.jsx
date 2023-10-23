@@ -1,7 +1,7 @@
 import Sidebar from "./sidebar";
 import {Link} from "react-router-dom";
 import React from "react";
-import {DarkModeToggle} from "./dark_mode_toggle";
+import {DarkModeToggle} from "./darkModeToggle";
 
 class Print extends React.Component {
     state = {
@@ -45,6 +45,8 @@ class Print extends React.Component {
                         </div>
                         {this.state.showMessage2 && <div className="output">One thing+++Another thing</div>}
                         <button className="run-code-button" onClick={this.onButtonClickHandler2}>Run</button>
+
+                        <h3>Easy peasy ;) </h3>
 
                         {/*NAV BUTTONS*/}
                         <div className="nav-buttons">

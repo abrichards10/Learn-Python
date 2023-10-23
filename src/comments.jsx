@@ -1,7 +1,7 @@
 import Sidebar from "./sidebar";
 import {Link} from "react-router-dom";
 import React from "react";
-import {DarkModeToggle} from "./dark_mode_toggle";
+import {DarkModeToggle} from "./darkModeToggle";
 class Comments extends React.Component {
     render() {
         return (
