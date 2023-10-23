@@ -24,12 +24,14 @@ class Conditionals extends React.Component{
 
                         Kinda like:<br/><br/>
 
-                        <i>If I go <b>left</b> I encounter a dragon<br/>
-                        But if I go <b>right</b> I meet a princess<br/>
-                            Otherwise I keep going forward
+                        &emsp;&emsp;<i>If I go <b>left</b> I encounter a dragon<br/>
+                        &emsp;&emsp;But if I go <b>right</b> I meet a princess<br/>
+                        &emsp;&emsp;<b>Otherwise</b> I keep going forward
                         </i><br/><br/>
 
                         ...so in code these conditions are determined by a <b>boolean</b><br/><br/>
+
+                        <i>(another data type)</i><br/><br/>
 
                         and booleans are either <b>True</b> or <b>False</b><br/><br/>
 
@@ -40,7 +42,10 @@ class Conditionals extends React.Component{
                         if that's <b><i>False</i></b> too then we end up defaulting to going forward<br/><br/>
 
 
-                        in code we could set some variable to the direction the hero goes so it would look like this:<br/><br/>
+
+
+
+                        In code we could set some variable to the direction the hero goes so it would look like this:<br/><br/>
 
 
                         <div className="code-background">
@@ -53,11 +58,23 @@ class Conditionals extends React.Component{
                             &nbsp;else:<br/>
                             &nbsp;&nbsp;&nbsp;print("You continue forward... coward")
                         </div>
-                        {this.state.showMessage && <div className="output">You found a princess!</div>}
+                        {this.state.showMessage && <div className="output">You found a princess! 👸 </div>}
                         <button className="run-code-button" onClick={this.onButtonClickHandler}>Run</button>
                         <br/><br/>
 
-                        In this example, since the direction is "right" then the output would be "You found a princess!"
+                        In this example, since the hero went "right" then the output would be "You found a princess!"<br/><br/>
+
+                        To break it down:
+                        <br/>
+                        <ul>
+                            <li>The conditional is evaluated in the parenthesis ()</li>
+                            <li>Each conditional ends with a colon ":"</li>
+                            <li>It compares values --> <i>(in this case two values: direction with "right" or "left")</i></li>
+                            <li>It uses the double equals sign "==" to compare values</li>
+                            <li>If the condition is <b>True</b> then everything inside the conditional is run</li>
+                            <li>If none of the if or elif conditionals evaluate to true, we default to running what's in 'else'</li>
+                        </ul>
+
 
 
 

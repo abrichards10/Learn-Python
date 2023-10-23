@@ -3,6 +3,8 @@ import Sidebar from "./sidebar";
 import "./index.css"
 import {Link} from "react-router-dom";
 import {DarkModeToggle} from "./dark_mode_toggle";
+
+//  npm run deploy
 class Home extends React.Component {
     render() {
         return (

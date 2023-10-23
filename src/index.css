@@ -110,6 +110,15 @@ body {
 
 .menu-item {
   color: black;
+  line-height: 40px;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.menu-item:hover {
+  color: #473349;
+  background-color: #ac90b0;
 }
 
 .hello-world {
@@ -200,6 +209,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 .dark-mode-icon {
+  margin-top: 35px;
   cursor: pointer;
   margin-left: 90%;
   border-radius: 50px;
