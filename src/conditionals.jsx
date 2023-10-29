@@ -52,7 +52,7 @@ class Conditionals extends React.Component{
 
                         and booleans are either <b>True</b> or <b>False</b><br/><br/>
 
-                        so if it's <b><i>True</i></b> that the hero goes left --> they're gonna fight the dragon<br/>
+                        so if it's <b><i>True</i></b> that the hero goes left --&gt; they're gonna fight the dragon<br/>
 
                         if it's <b><i>False</i></b> then we check if he goes right instead to the princess<br/>
 
@@ -62,12 +62,12 @@ class Conditionals extends React.Component{
                         Conditionals can be evaluated through logical comparisons:<br/>
                         <i>(Sorry, no easier way to say that :p ) </i>
                         <ul>
-                            <li>x == y  -->  equals<br/></li>
-                            <li> x != y  -->  does not equal<br/></li>
-                            <li>x &gt; y  --> greater than<br/></li>
-                            <li>x &lt; y --> less than<br/></li>
-                            <li>x &gt;= y  --> greater than or equal to</li>
-                            <li>x &lt;= y  --> less than or equal to</li>
+                            <li>x == y  --&gt;  equals<br/></li>
+                            <li> x != y  --&gt;  does not equal<br/></li>
+                            <li>x &gt; y  --&gt; greater than<br/></li>
+                            <li>x &lt; y --&gt; less than<br/></li>
+                            <li>x &gt;= y  --&gt; greater than or equal to</li>
+                            <li>x &lt;= y  --&gt; less than or equal to</li>
                         </ul><br/>
 
                         In code, we could set some variable to the direction the hero goes so it would look like this:<br/><br/>
@@ -94,7 +94,7 @@ class Conditionals extends React.Component{
                             <li>The conditional is evaluated in the parenthesis ()</li>
                             <li>Each conditional ends with a colon " : "</li>
                             <li>Everything under the conditional that is <b>indented</b> is part of that conditional</li>
-                            <li>It compares values --> <i>(in this case two values: direction with "right" or "left")</i></li>
+                            <li>It compares values --&gt; <i>(in this case two values: direction with "right" or "left")</i></li>
                             <li>It uses the double equals sign "==" to compare values</li>
                             <li>If the condition is <b>True</b> then everything inside the conditional is run</li>
                             <li>If none of the 'if' or 'elif' conditionals evaluate to true, we default to running what is in 'else'</li>
@@ -105,9 +105,9 @@ class Conditionals extends React.Component{
                         More than one "if" statement can be true <br/>
                         <i>Ex: </i> <br/>
                         <div className="code-background">
-                            if ( 2 > 1 ):<br/>
+                            if ( 2 &gt; 1 ):<br/>
                             &nbsp;&nbsp;&nbsp;print("2 is bigger"):<br/>
-                            &nbsp;if ( 3 > 1 ):<br/>
+                            &nbsp;if ( 3 &gt; 1 ):<br/>
                             &nbsp;&nbsp;&nbsp;print("3 is bigger"):<br/>
                         </div>
                         {this.state.showMessage1 && <div className="output">2 is bigger<br/>&emsp;3 is bigger</div>}
@@ -118,9 +118,9 @@ class Conditionals extends React.Component{
                         <br/>
                         <i>Ex: </i> <br/>
                         <div className="code-background">
-                            if ( 2 > 1 ):<br/>
+                            if ( 2 &gt; 1 ):<br/>
                             &nbsp;&nbsp;&nbsp;print("2 is bigger"):<br/>
-                            &nbsp;elif ( 3 > 1 ):<br/>
+                            &nbsp;elif ( 3 &gt; 1 ):<br/>
                             &nbsp;&nbsp;&nbsp;print("3 is bigger"):<br/>
                         </div>
                         {this.state.showMessage2 && <div className="output">2 is bigger</div>}
@@ -136,8 +136,8 @@ class Conditionals extends React.Component{
                             a = 4<br/>
                             &nbsp;b = 3<br/>
                             &nbsp;c = 2<br/>
-                            &nbsp;if ( a > b ):<br/>
-                            &nbsp;&nbsp;&nbsp;if ( b > c ):<br/>
+                            &nbsp;if ( a &gt; b ):<br/>
+                            &nbsp;&nbsp;&nbsp;if ( b &gt; c ):<br/>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("inner nested conditional")<br/>
                         </div>
                         {this.state.showMessage4 && <div className="output">inner nested conditional</div>}
@@ -154,9 +154,9 @@ class Conditionals extends React.Component{
                         You can also combine conditionals<br/><br/>
 
                         <ul>
-                            <li>and --> all conditionals need to be met to be true</li>
-                            <li>or --> at least one condition needs to be bet to be true</li>
-                            <li>not --> referring to when a conditional is <b>not</b> true</li>
+                            <li>and --&gt; all conditionals need to be met to be true</li>
+                            <li>or --&gt; at least one condition needs to be bet to be true</li>
+                            <li>not --&gt; referring to when a conditional is <b>not</b> true</li>
                         </ul><br/>
 
                         <i>I do <b><i>not</i></b> see "not" used much :D</i><br/><br/><br/>
@@ -166,11 +166,11 @@ class Conditionals extends React.Component{
                         I'm so sorry – have an example<br/><br/>
 
                         <div className="code-background">
-                            if ( (2 > 1) and ( 4 > 3 ) ):<br/>
+                            if ( (2 &gt; 1) and ( 4 &gt; 3 ) ):<br/>
                             &nbsp;&nbsp;&nbsp;print("both are true")<br/>
-                            &nbsp;if ( (3 > 1) or (4 &lt; 2) or (5 > 10)):<br/>
+                            &nbsp;if ( (3 &gt; 1) or (4 &lt; 2) or (5 &gt; 10)):<br/>
                             &nbsp;&nbsp;&nbsp;print("at least one is true")<br/>
-                            &nbsp;if ( not 1 > 2):<br/>
+                            &nbsp;if ( not 1 &gt; 2):<br/>
                             &nbsp;&nbsp;&nbsp;print("1 is not greater than 2")
                         </div>
                         {this.state.showMessage3 && <div className="output">both are true <br/>&emsp;at least one is true<br/>&emsp;1 is not greater than 2</div>}
@@ -199,6 +199,7 @@ class Conditionals extends React.Component{
 
                         <div className="nav-buttons">
                             <Link to="/variables" className="back-button"></Link>
+                            <Link to="/lists" className="next-button"></Link>
                         </div>
                     </div>
                 </div>

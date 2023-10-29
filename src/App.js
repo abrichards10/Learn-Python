@@ -7,6 +7,8 @@ import Print from "./print";
 import Variables from "./variables";
 import Conditionals from "./conditionals";
 import Feedback from "./feedback";
+import Lists from "./lists";
+import Loops from "./loops";
 
 function App() {
     return (
@@ -19,6 +21,8 @@ function App() {
                 <Route path="/print" element={<Print />}></Route>
                 <Route path="/variables" element={<Variables />}></Route>
                 <Route path="/conditionals" element={<Conditionals />}></Route>
+                <Route path="/lists" element={<Lists />}></Route>
+                <Route path="/loops" element={<Loops />}></Route>
                 <Route path="/feedback" element={<Feedback />}></Route>
             </Routes>
         </div>
