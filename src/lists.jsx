@@ -13,6 +13,14 @@ class Lists extends React.Component {
     onButtonClickHandler = () => {
         this.setState({showMessage: true});
     };
+
+    onButtonClickHandler1 = () => {
+        this.setState({showMessage1: true});
+    };
+
+    onButtonClickHandler2 = () => {
+        this.setState({showMessage2: true});
+    };
         
     render() {
         return (
@@ -25,30 +33,88 @@ class Lists extends React.Component {
                     <div className="main-home">
                         <h1>Lists</h1>
                         <p>
-                            <div className="code-background">
-                                direction = "right"<br/>
 
-                                &nbsp;if (direction == "right"):<br/>
-                                &nbsp;&nbsp;&nbsp;print("You found a princess! 👸 "):<br/>
-                                &nbsp;elif (direction == "left"):<br/>
-                                &nbsp;&nbsp;&nbsp;print("You encountered a dragon! 🐉 "):<br/>
-                                &nbsp;else:<br/>
-                                &nbsp;&nbsp;&nbsp;print("You continue forward... coward")
+                            This is a list: <br/>
+                            ["dragon", "princess", "knight", "horse"]<br/><br/>
+
+                            <ul>
+                                <li>
+                                    List items are stored in square brackets '[ ]' separated by commas ' , '
+                                </li>
+                                <li>
+                                    A list is like a box of ~things~
+                                </li>
+                                <li>
+                                    Python is special - you can store things of the same <b>type</b>
+                                </li>
+                                <li>
+                                    Lists are <b><i>ordered</i></b>, <b><i>changeable</i></b>, and allow <b><i>duplicates</i></b><br/><br/>
+                                </li>
+                            </ul>
+
+
+                            So a list can look like this: <br/>
+                            [3, "crisps", False, 3.8, "eleventeen"]<br/>
+                            ...and still be valid!<br/><br/>
+
+
+                            If you wanna fetch something from a list, you would reference its <i>index</i><br/>
+                            ...the index refers to <b>where</b> something is in a list<br/>
+                            ...it increases numerically from 0 --> so the first item in a list is at index '0'<br/><br/>
+
+                            ...and in order to get access to an item you would reference the list followed by brackets with the number inside!<br/><br/>
+
+                            Like this:
+                            <div className="code-background">
+                                &nbsp;my_list = [3, 5, 1, 2, 7, 8]<br/>
+                                &nbsp;&nbsp;print(my_list[0])<br/>
+                                &nbsp;&nbsp;print(my_list[2])<br/>
+                                &nbsp;&nbsp;print(my_list[5])
                             </div>
-                            {this.state.showMessage && <div className="output">You found a princess! 👸 </div>}
+                            {this.state.showMessage && <div className="output">3<br/>&nbsp;&nbsp;1<br/>&nbsp;&nbsp;8</div>}
                             <button className="run-code-button" onClick={this.onButtonClickHandler}>Run</button>
                             <br/><br/>
                             <br/>
+
+                            <h3>Length</h3>
+
+                            Want the size? use len()<br/><br/>
+
+                            Like this:
                             <div className="code-background">
-                                print(“Hi”) # So is this
+                                &nbsp;my_list = [3, 5, 1, 2, 7, 8]<br/>
+                                &nbsp;&nbsp;print(len(my_list))
                             </div>
-                            <br/>
-                            <i>(Psst, put a hashtag in front)</i><br/><br/>
+                            {this.state.showMessage2 && <div className="output">6</div>}
+                            <button className="run-code-button" onClick={this.onButtonClickHandler2}>Run</button>
+                            <br/><br/><br/>
+
+
+
+                            <h3>Nested Lists</h3>
+                            You can even create lists <b>inside</b> of lists: <br/>
+
+                            [3, ["apples", "oranges", "bananas"], 27, 8, "giraffe"]<br/><br/>
+
+                            So if you want to access a list INSIDE of a list you have to do something special<br/><br/>
+
+                            Basically you would have to use 2 brackets<br/><br/>
+
+                            Like this:<br/>
                             <div className="code-background">
-                                “””<br/>&nbsp;
-                                Everything between these 3 quotes is a comment<br/>
-                                &nbsp;“””
+                                &nbsp;my_list = [3, ["bacon", "pancakes", "eggs"], 4, 2]<br/>
+                                &nbsp;&nbsp;print(my_list[1][1])<br/>
+                                &nbsp;&nbsp;print(my_list[1][2])<br/>
                             </div>
+                            {this.state.showMessage1 && <div className="output">pancakes<br/>&nbsp;&nbsp;eggs</div>}
+                            <button className="run-code-button" onClick={this.onButtonClickHandler1}>Run</button>
+                            <br/><br/>
+
+                            Here, in order to get 'eggs' we would reference the outer list first with [1] (the first item in the outer list)<br/>
+
+                            ... then we would reference the index of the <i>inner</i> list with [2]<br/><br/>
+
+                            <h3>Now you know stuff about lists! :D </h3>
                         </p>
                         <div className="nav-buttons">
                             <Link to="/conditionals" className="back-button"></Link>

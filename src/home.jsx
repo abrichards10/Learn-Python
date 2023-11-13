@@ -3,7 +3,7 @@ import Sidebar from "./sidebar";
 import "./index.css"
 import {Link} from "react-router-dom";
 import {DarkModeToggle} from "./darkModeToggle";
-
+import Snek from "./Snek.png";
 //  npm run deploy
 class Home extends React.Component {
     render() {
@@ -15,7 +15,10 @@ class Home extends React.Component {
                     <DarkModeToggle></DarkModeToggle>
                 </div>
                 <div className="main-home">
-                    <h1>Greetings</h1>
+                    <div className="home-top" >
+                        <div className="greetings"><h1>Greetingsss</h1></div>
+                        <img src={Snek} alt="snek" className="snek-pic"/>
+                    </div>
                     <p>Hello!  I’m Brooke and I am here to teach you how to code.
                         This is an ongoing project that will continue to grow
                         with time and include many more topics!  I will go over

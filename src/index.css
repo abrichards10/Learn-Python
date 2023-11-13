@@ -191,6 +191,22 @@ Note: Beware of modifying this element as it can break the animations - you shou
   background: rgba(0, 0, 0, 0.3);
 }
 
+.home-top {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-between;
+  height: 400px;
+}
+
+.greetings {
+  flex: 0;
+}
+
+.snek-pic {
+  flex: 1;
+}
+
 
 /* LINK AND HOVER */
 
