@@ -35,7 +35,7 @@ class Lists extends React.Component {
                         <p>
 
                             This is a list: <br/>
-                            ["dragon", "princess", "knight", "horse"]<br/><br/>
+                            ["dragon", "princess", "knight", "horse"]<br/><br/><br/>
 
                             <ul>
                                 <li>
@@ -50,19 +50,20 @@ class Lists extends React.Component {
                                 <li>
                                     Lists are <b><i>ordered</i></b>, <b><i>changeable</i></b>, and allow <b><i>duplicates</i></b><br/><br/>
                                 </li>
-                            </ul>
+                            </ul><br/>
 
+                            (There's also <b>tuples</b>, <b>sets</b> and <b>dictionaries</b> which we'll cover later...)<br/><br/><br/>
 
                             So a list can look like this: <br/>
                             [3, "crisps", False, 3.8, "eleventeen"]<br/>
-                            ...and still be valid!<br/><br/>
+                            ...and still be valid!<br/><br/><br/>
 
 
                             If you wanna fetch something from a list, you would reference its <i>index</i><br/>
                             ...the index refers to <b>where</b> something is in a list<br/>
-                            ...it increases numerically from 0 --> so the first item in a list is at index '0'<br/><br/>
+                            ...it increases numerically from 0 --> so the first item in a list is at index '0'<br/><br/><br/>
 
-                            ...and in order to get access to an item you would reference the list followed by brackets with the number inside!<br/><br/>
+                            ...and in order to get access to an item you would reference the list followed by brackets with the number inside!<br/><br/><br/>
 
                             Like this:
                             <div className="code-background">
@@ -76,9 +77,9 @@ class Lists extends React.Component {
                             <br/><br/>
                             <br/>
 
-                            <h3>Length</h3>
+                            <h3>Length</h3><br/>
 
-                            Want the size? use len()<br/><br/>
+                            Want the size? use len()<br/><br/><br/>
 
                             Like this:
                             <div className="code-background">
@@ -91,14 +92,14 @@ class Lists extends React.Component {
 
 
 
-                            <h3>Nested Lists</h3>
+                            <h3>Nested Lists</h3><br/>
                             You can even create lists <b>inside</b> of lists: <br/>
 
-                            [3, ["apples", "oranges", "bananas"], 27, 8, "giraffe"]<br/><br/>
+                            [3, ["apples", "oranges", "bananas"], 27, 8, "giraffe"]<br/><br/><br/>
 
-                            So if you want to access a list INSIDE of a list you have to do something special<br/><br/>
+                            So if you want to access a list INSIDE of a list you have to do something special<br/><br/><br/>
 
-                            Basically you would have to use 2 brackets<br/><br/>
+                            ... basically you would have to use 2 brackets<br/><br/><br/>
 
                             Like this:<br/>
                             <div className="code-background">
@@ -108,11 +109,24 @@ class Lists extends React.Component {
                             </div>
                             {this.state.showMessage1 && <div className="output">pancakes<br/>&nbsp;&nbsp;eggs</div>}
                             <button className="run-code-button" onClick={this.onButtonClickHandler1}>Run</button>
-                            <br/><br/>
+                            <br/><br/><br/>
 
                             Here, in order to get 'eggs' we would reference the outer list first with [1] (the first item in the outer list)<br/>
 
-                            ... then we would reference the index of the <i>inner</i> list with [2]<br/><br/>
+                            ... then we would reference the index of the <i>inner</i> list with [2]<br/><br/><br/>
+
+                            <i>btw...</i><br/>
+
+                            <ul>
+                               <li>
+                                   tuples are <b><i>ordered</i></b>, <b><i>unchangeable</i></b>, and allow <b><i>duplicates</i></b>
+                               </li>
+                                <li>sets are <b><i>unordered</i></b>, <b><i>unchangeable</i></b>, <b><i>unindexed</i></b> and do <b>not</b> allow <b><i>duplicates</i></b>
+                                </li>
+                                <li>
+                                    dictionaries are <b><i>ordered</i></b>, <b><i>changeable</i></b>, and do <b>not</b> allow <b><i>duplicates</i></b><br/><br/>
+                                </li>
+                            </ul><br/>
 
                             <h3>Now you know stuff about lists! :D </h3>
                         </p>
