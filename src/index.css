@@ -196,7 +196,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   flex-direction: row;
   align-items: end;
   justify-content: space-between;
-  height: 400px;
+  height: 200px;
 }
 
 .greetings {
@@ -204,9 +204,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 .snek-pic {
-  flex: 1;
+  height: 300px;
 }
-
 
 /* LINK AND HOVER */
 
@@ -227,7 +226,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .dark-mode-icon {
   margin-top: 35px;
   cursor: pointer;
-  margin-left: 90%;
+  margin-left: 90px;
   border-radius: 50px;
   border-color: transparent;
   background-color: #000000;

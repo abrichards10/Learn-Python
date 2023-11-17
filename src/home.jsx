@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Sidebar from "./sidebar";
 import "./index.css"
 import {Link} from "react-router-dom";
@@ -6,14 +6,15 @@ import {DarkModeToggle} from "./darkModeToggle";
 import Snek from "./Snek.png";
 //  npm run deploy
 class Home extends React.Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
     render() {
         return (
         <div id="outer-container">
             <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
             <div id="page-wrap">
-                <div className="box-top">
-                    <DarkModeToggle></DarkModeToggle>
-                </div>
+                <DarkModeToggle></DarkModeToggle>
                 <div className="main-home">
                     <div className="home-top" >
                         <div className="greetings"><h1>Greetingsss</h1></div>

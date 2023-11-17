@@ -5,6 +5,9 @@ import {Link} from "react-router-dom";
 import {DarkModeToggle} from "./darkModeToggle";
 class Variables extends React.Component{
 
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
     state = {
         showMessage: false
     }

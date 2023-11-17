@@ -7,6 +7,9 @@ import {DarkModeToggle} from "./darkModeToggle";
 //  npm run deploy
 class Loops extends React.Component {
 
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
     state = {
         showMessage: false
     }
@@ -223,6 +226,8 @@ class Loops extends React.Component {
                         <br/>
 
                         Also forgot to mention we can print things with a comma like that 👀
+
+
 
                     </p>
                     <div className="nav-buttons">

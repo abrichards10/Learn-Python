@@ -5,6 +5,9 @@ import {DarkModeToggle} from "./darkModeToggle";
 import SearchBar from "./searchBar";
 
 class Setup extends React.Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
     render() {
         return (
             <div id="outer-container">

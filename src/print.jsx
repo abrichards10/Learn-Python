@@ -4,6 +4,9 @@ import React from "react";
 import {DarkModeToggle} from "./darkModeToggle";
 
 class Print extends React.Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
     state = {
         showMessage: false
     }

@@ -2,6 +2,9 @@ import React from 'react';
 import Sidebar from "./sidebar";
 import {DarkModeToggle} from "./darkModeToggle";
 class Feedback extends React.Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
     render() {
         return (
             <div id="outer-container">

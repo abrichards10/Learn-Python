@@ -3,6 +3,9 @@ import {Link} from "react-router-dom";
 import React from "react";
 import {DarkModeToggle} from "./darkModeToggle";
 class Comments extends React.Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
     render() {
         return (
             <div id="outer-container">

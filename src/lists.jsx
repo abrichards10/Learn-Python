@@ -7,6 +7,9 @@ import {DarkModeToggle} from "./darkModeToggle";
 //  npm run deploy
 class Lists extends React.Component {
 
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
     state = {
         showMessage: false
     }

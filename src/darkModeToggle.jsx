@@ -13,7 +13,7 @@ export const DarkModeToggle = () => {
         <Switch
             checked={isDark}
             onChange={setIsDark}
-            className="dark-mode-icon" onClick={() => setIsIcon(!isIcon)}>
+            className="dark-mode-icon" onClick={() => {setIsIcon(!isIcon);}}>
             {isIcon ? "🌙" : "🔆"}
         </Switch>
     );
