@@ -53,22 +53,19 @@ class Loops extends React.Component {
                     <DarkModeToggle></DarkModeToggle>
                 </div>
                 <div className="main-home">
+                    <div className="nav-buttons">
+                        <Link to="/lists" className="back-button"></Link>
+                    </div>
                     <p>
                         <h1>Loops</h1>
                         Loops are tricky ngl<br/><br/><br/>
-
                         There are two main types of loops that are popular:<br/>
-
                         <ul>
                             <li>for</li>
                             <li>while</li>
-
                         </ul><br/><br/>
-
                         We use <b>for</b> loops to iterate over things sequentially<br/><br/><br/>
-
                         Like this: <br/>
-
                         <div className="code-background">
                             food_list = ["carrots", "peas", "mushrooms", "salami"]<br/>
                             &emsp;for i in food_list:<br/>
@@ -82,11 +79,8 @@ class Loops extends React.Component {
                         </div>}
                         <button className="run-code-button" onClick={this.onButtonClickHandler}>Run</button>
                         <br/>
-
                         In this case, we're setting a variable ' i ' equal to the current item in the list<br/><br/><br/>
-
                         You can also loop through words:<br/>
-
                         <div className="code-background">
                             for i in "soup":<br/>
                             &emsp;&emsp;print(i)
@@ -99,13 +93,9 @@ class Loops extends React.Component {
                         </div>}
                         <button className="run-code-button" onClick={this.onButtonClickHandler1}>Run</button>
                         <br/>
-
                         This is because Strings are basically just a list of characters - so they're loopable (I know, I know... it's <i>iterable</i>)<br/><br/><br/>
-
                         You can also iterate through a <b>range</b> of things using... well, range()<br/><br/><br/>
-
                         Like this: <br/>
-
                         <div className="code-background">
                             for i in range(3):<br/>
                             &emsp;&emsp;print("Yo welcome back to another unboxing")
@@ -117,11 +107,8 @@ class Loops extends React.Component {
                         </div>}
                         <button className="run-code-button" onClick={this.onButtonClickHandler4}>Run</button>
                         <br/><br/><br/>
-
                         Using range() is cool bc you can specify starting and stopping values (the default is 0)<br/><br/>
-
                         Like this: <br/>
-
                         <div className="code-background">
                             for r in range(2, 5):<br/>
                             &emsp;&emsp;print(r)
@@ -133,12 +120,8 @@ class Loops extends React.Component {
                         </div>}
                         <button className="run-code-button" onClick={this.onButtonClickHandler5}>Run</button>
                         <br/>
-
                         So '2' is the start value and '5' is the end... <br/>
-
                         Notice how it <i><b>includes</b></i> the 2 as part of the range but not 5 <br/><br/><br/>
-
-
                         One more thing with range you can do:  <br/>
                         <div className="code-background">
                             for r in range(2, 20, 3):<br/>
@@ -154,13 +137,9 @@ class Loops extends React.Component {
                         </div>}
                         <button className="run-code-button" onClick={this.onButtonClickHandler6}>Run</button>
                         <br/>
-
                         Here we're basically <b>starting</b> at 2, <b>ending</b> at 20, and <b>incrementing</b> by 3<br/><br/><br/>
-
                         There's also this thing called <b>break</b> you can use if you want to stop looping<br/><br/><br/>
-
                         Think, "<i>I want to break free</i>":<br/>
-
                         <div className="code-background">
                             &nbsp;num_list = [1, 2, 3, 4, 5, 6, 7]<br/>
                             &emsp;for x in num_list:<br/>
@@ -176,13 +155,9 @@ class Loops extends React.Component {
                         </div>}
                         <button className="run-code-button" onClick={this.onButtonClickHandler2}>Run</button>
                         <br/>
-
                         This way, once we hit a certain point in the iteration, we can just yeet our way out<br/><br/><br/>
-
                         We can also use <b>continue</b> to stop looping and start a new iteration<br/><br/><br/>
-
                         Like this: <br/>
-
                         <div className="code-background">
                             &nbsp;num_list = [1, 2, 3, 4, 5, 6]<br/>
                             &emsp;for j in num_list:<br/>
@@ -198,11 +173,8 @@ class Loops extends React.Component {
                             6</div>}
                         <button className="run-code-button" onClick={this.onButtonClickHandler3}>Run</button>
                         <br/>
-
                         So basically we got to '4' and immediately went to the next iteration with 'continue'.<br/><br/><br/>
-
                         Just like if statements, you can <b>nest</b> for loops :D <br/><br/><br/>
-
                         Like this: <br/>
                         <div className="code-background">
                             size = ["big", "small", "medium"]<br/>
@@ -224,11 +196,7 @@ class Loops extends React.Component {
                         </div>}
                         <button className="run-code-button" onClick={this.onButtonClickHandler7}>Run</button>
                         <br/>
-
                         Also forgot to mention we can print things with a comma like that 👀
-
-
-
                     </p>
                     <div className="nav-buttons">
                         <Link to="/lists" className="back-button"></Link>

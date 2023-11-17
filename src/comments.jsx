@@ -15,6 +15,10 @@ class Comments extends React.Component {
                         <DarkModeToggle></DarkModeToggle>
                     </div>
                     <div className="main-home">
+                        <div className="nav-buttons">
+                            <Link to="/setup" className="back-button"></Link>
+                            <Link to="/print" className="next-button"></Link>
+                        </div>
                         <h1>Comments</h1>
                         <p>
                             <div className="code-background">

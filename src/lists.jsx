@@ -34,12 +34,14 @@ class Lists extends React.Component {
                         <DarkModeToggle></DarkModeToggle>
                     </div>
                     <div className="main-home">
+                        <div className="nav-buttons">
+                            <Link to="/conditionals" className="back-button"></Link>
+                            <Link to="/loops" className="next-button"></Link>
+                        </div>
                         <h1>Lists</h1>
                         <p>
-
                             This is a list: <br/>
                             ["dragon", "princess", "knight", "horse"]<br/><br/><br/>
-
                             <ul>
                                 <li>
                                     List items are stored in square brackets '[ ]' separated by commas ' , '

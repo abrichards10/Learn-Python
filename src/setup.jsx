@@ -17,6 +17,10 @@ class Setup extends React.Component {
                         <DarkModeToggle></DarkModeToggle>
                     </div>
                     <div className="main-home">
+                        <div className="nav-buttons">
+                            <Link to="/" className="back-button"></Link>
+                            <Link to="/comments" className="next-button"></Link>
+                        </div>
                         <h1>Setup</h1>
                         <p>
                             Install Python --> <i>(Probably don't have to tbh, it's usually installed)</i>

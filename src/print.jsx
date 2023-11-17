@@ -29,6 +29,10 @@ class Print extends React.Component {
                         <DarkModeToggle></DarkModeToggle>
                     </div>
                     <div className="main-home">
+                        <div className="nav-buttons">
+                            <Link to="/comments" className="back-button"></Link>
+                            <Link to="/variables" className="next-button"></Link>
+                        </div>
                         <h1>Print</h1>
                         <div className="code-background">
                             print("This is a print statement")

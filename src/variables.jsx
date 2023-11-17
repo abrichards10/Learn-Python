@@ -43,6 +43,10 @@ class Variables extends React.Component{
                         <DarkModeToggle></DarkModeToggle>
                     </div>
                     <div className="main-home">
+                        <div className="nav-buttons">
+                            <Link to="/print" className="back-button"></Link>
+                            <Link to="/conditionals" className="next-button"></Link>
+                        </div>
                         <h1>Variables</h1>
                         Declare a variable
                         <div className="code-background">

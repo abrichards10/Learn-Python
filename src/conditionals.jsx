@@ -39,6 +39,10 @@ class Conditionals extends React.Component{
                         <DarkModeToggle></DarkModeToggle>
                     </div>
                     <div className="main-home">
+                        <div className="nav-buttons">
+                            <Link to="/variables" className="back-button"></Link>
+                            <Link to="/lists" className="next-button"></Link>
+                        </div>
                         <h1>Conditionals</h1>
                         Conditionals are like ... a choose your own adventure game<br/><br/>
 
